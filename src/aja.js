@@ -486,7 +486,7 @@
                 }
 
                 //open the XHR request
-                openParams = [method, url, async];
+                openParams = [method.toUpperCase(), url, async];
                 if(data.auth){
                     openParams.push(data.auth.user);
                     openParams.push(data.auth.passwd);
